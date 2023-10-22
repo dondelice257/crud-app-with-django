@@ -1,0 +1,18 @@
+{% extends "master.html"%}
+
+
+{% block title%}
+The details of {{country.name}}
+{% endblock%}
+
+{% block content%}
+<h1>Country details</h1>
+
+<ul>
+    <li>{{country.name}}</li>
+    <li>{{country.capital}}</li>
+    <li>{{country.people}}</li>
+    <li>{{country.area}}</li>
+</ul>
+
+{%endblock%}

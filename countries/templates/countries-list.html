@@ -1,0 +1,21 @@
+{% extends "master.html" %}
+
+{% block title %}
+countries' list 
+{% endblock %}
+
+
+{% block content %}
+<h1>Countries' list</h1>
+
+<ul>
+    {% for country in countries %}
+    <li>
+        <a href="details/{{country.id}}">{{country.name}}</a>
+    </li>
+  {% endfor %}
+
+
+</ul>
+
+{%endblock%}

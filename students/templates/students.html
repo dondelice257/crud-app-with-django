@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<link rel="stylesheet" href="{% static 'first.css' %}">
+<html>
+<body>
+
+<h1>Students</h1>
+  
+<table border="1">
+  <tr>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Phone number</th>
+    <th>Joined date</th>
+
+
+
+  </tr>
+  {% for x in students %}
+    <tr>
+      <td>{{ x.first_name }}</td>
+      <td>{{ x.last_name }}</td>
+      <td>{{ x.phone }}</td>
+      <td>{{ x.joined_date }}</td>
+
+
+
+    </tr>
+
+      
+  {% endfor %}
+      </table>
+</body>
+</html>
